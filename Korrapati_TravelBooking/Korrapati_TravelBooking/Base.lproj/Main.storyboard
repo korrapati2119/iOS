@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23727" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BdT-4E-TUX">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23721"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--BUS TRAVEL BOOKING-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="BookingViewController" customModule="Korrapati_TravelBooking" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Primary Traveller’s name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="58D-B8-CRZ">
+                                <rect key="frame" x="20" y="202" width="353" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter No. of Travellers" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DjF-UK-oCl">
+                                <rect key="frame" x="20" y="256" width="353" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Class: Luxury / Economy" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IL9-sb-vyj">
+                                <rect key="frame" x="20" y="310" width="353" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HNB-v1-ThJ">
+                                <rect key="frame" x="60" y="384" width="273" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Book Now"/>
+                                <connections>
+                                    <action selector="bookNowButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="S9A-cq-9Fo"/>
+                                    <segue destination="KKj-nO-6vT" kind="show" identifier="resultSegue" id="xDv-bx-bnJ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="DjF-UK-oCl" firstAttribute="top" secondItem="58D-B8-CRZ" secondAttribute="bottom" constant="20" id="2Nt-ey-xra"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="IL9-sb-vyj" secondAttribute="trailing" constant="20" id="46S-pV-gsM"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="58D-B8-CRZ" secondAttribute="trailing" constant="30" id="DLK-yT-sMr"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="58D-B8-CRZ" secondAttribute="trailing" constant="20" id="HZ8-Xu-rR5"/>
+                            <constraint firstItem="IL9-sb-vyj" firstAttribute="top" secondItem="DjF-UK-oCl" secondAttribute="bottom" constant="20" id="N5o-bK-pOT"/>
+                            <constraint firstItem="HNB-v1-ThJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="60" id="TVK-p1-Ot4"/>
+                            <constraint firstItem="DjF-UK-oCl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="YkV-2t-PU6"/>
+                            <constraint firstItem="IL9-sb-vyj" firstAttribute="top" secondItem="DjF-UK-oCl" secondAttribute="bottom" constant="20" id="bWv-oM-kDP"/>
+                            <constraint firstItem="58D-B8-CRZ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="e0j-3B-Sa7"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="DjF-UK-oCl" secondAttribute="trailing" constant="20" id="iie-GC-qRN"/>
+                            <constraint firstItem="58D-B8-CRZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="joS-pI-KhF"/>
+                            <constraint firstItem="HNB-v1-ThJ" firstAttribute="top" secondItem="IL9-sb-vyj" secondAttribute="bottom" constant="40" id="mzi-ph-LoR"/>
+                            <constraint firstItem="58D-B8-CRZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="njs-Qx-dGo"/>
+                            <constraint firstItem="IL9-sb-vyj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="oD2-NS-wxL"/>
+                            <constraint firstItem="58D-B8-CRZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="sFG-pt-dGe"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="HNB-v1-ThJ" secondAttribute="trailing" constant="60" id="ytS-iz-P48"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="BUS TRAVEL BOOKING" id="fli-BJ-2P0">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="xio-vU-bAH"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="cabinTypeOL" destination="IL9-sb-vyj" id="t22-dd-pyX"/>
+                        <outlet property="noOfTravellersOL" destination="DjF-UK-oCl" id="49r-gt-QfL"/>
+                        <outlet property="travellerNameOL" destination="58D-B8-CRZ" id="aDF-ep-NAq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1028.2442748091603" y="3.5211267605633805"/>
+        </scene>
+        <!--Korrapati Result View Controller-->
+        <scene sceneID="4SC-N1-pT0">
+            <objects>
+                <viewController id="KKj-nO-6vT" customClass="KorrapatiResultViewController" customModule="Korrapati_TravelBooking" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Pxr-Ve-SrY">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cnU-iJ-TFR">
+                                <rect key="frame" x="30" y="202" width="333" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="kcg-Hf-JOd"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Traveller Name:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C2C-Fu-cgy">
+                                <rect key="frame" x="40" y="422" width="313" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No of Guests:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ysI-I3-SuS">
+                                <rect key="frame" x="40" y="463" width="313" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Class Type" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qaD-UK-fHx">
+                                <rect key="frame" x="40" y="504" width="313" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total Cost:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6md-Oc-Yzo">
+                                <rect key="frame" x="40" y="545" width="313" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bZG-bL-OYZ">
+                                <rect key="frame" x="40" y="596" width="313" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="DKF-lg-Bmp"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ysI-I3-SuS" firstAttribute="leading" secondItem="DKF-lg-Bmp" secondAttribute="leading" constant="40" id="4YY-JR-MsQ"/>
+                            <constraint firstItem="cnU-iJ-TFR" firstAttribute="leading" secondItem="DKF-lg-Bmp" secondAttribute="leading" constant="30" id="81V-jE-4ys"/>
+                            <constraint firstItem="DKF-lg-Bmp" firstAttribute="trailing" secondItem="qaD-UK-fHx" secondAttribute="trailing" constant="40" id="CUS-Nc-Kxm"/>
+                            <constraint firstItem="cnU-iJ-TFR" firstAttribute="top" secondItem="DKF-lg-Bmp" secondAttribute="top" constant="40" id="Eso-le-KA2"/>
+                            <constraint firstItem="cnU-iJ-TFR" firstAttribute="top" secondItem="DKF-lg-Bmp" secondAttribute="top" constant="40" id="Ghn-hz-Z2c"/>
+                            <constraint firstItem="C2C-Fu-cgy" firstAttribute="leading" secondItem="DKF-lg-Bmp" secondAttribute="leading" constant="40" id="IKA-ld-8ok"/>
+                            <constraint firstItem="cnU-iJ-TFR" firstAttribute="top" secondItem="DKF-lg-Bmp" secondAttribute="top" constant="40" id="J6M-dv-Emb"/>
+                            <constraint firstItem="qaD-UK-fHx" firstAttribute="leading" secondItem="DKF-lg-Bmp" secondAttribute="leading" constant="40" id="QeJ-JX-cGj"/>
+                            <constraint firstItem="bZG-bL-OYZ" firstAttribute="top" secondItem="6md-Oc-Yzo" secondAttribute="bottom" constant="30" id="Svg-Oj-ctC"/>
+                            <constraint firstItem="qaD-UK-fHx" firstAttribute="top" secondItem="ysI-I3-SuS" secondAttribute="bottom" constant="20" id="UgK-Xj-DAB"/>
+                            <constraint firstItem="DKF-lg-Bmp" firstAttribute="trailing" secondItem="6md-Oc-Yzo" secondAttribute="trailing" constant="40" id="XLL-yW-GAZ"/>
+                            <constraint firstItem="C2C-Fu-cgy" firstAttribute="top" secondItem="cnU-iJ-TFR" secondAttribute="bottom" constant="20" id="bY9-k6-Kh5"/>
+                            <constraint firstItem="6md-Oc-Yzo" firstAttribute="top" secondItem="qaD-UK-fHx" secondAttribute="bottom" constant="20" id="feo-CB-fqU"/>
+                            <constraint firstItem="DKF-lg-Bmp" firstAttribute="trailing" secondItem="ysI-I3-SuS" secondAttribute="trailing" constant="40" id="hd8-H9-btQ"/>
+                            <constraint firstItem="bZG-bL-OYZ" firstAttribute="leading" secondItem="DKF-lg-Bmp" secondAttribute="leading" constant="40" id="i4c-5b-dYF"/>
+                            <constraint firstItem="6md-Oc-Yzo" firstAttribute="leading" secondItem="DKF-lg-Bmp" secondAttribute="leading" constant="40" id="iTj-e7-4f7"/>
+                            <constraint firstItem="DKF-lg-Bmp" firstAttribute="trailing" secondItem="cnU-iJ-TFR" secondAttribute="trailing" constant="30" id="kqm-9D-ouC"/>
+                            <constraint firstItem="DKF-lg-Bmp" firstAttribute="trailing" secondItem="bZG-bL-OYZ" secondAttribute="trailing" constant="40" id="mOz-vS-PHC"/>
+                            <constraint firstItem="DKF-lg-Bmp" firstAttribute="trailing" secondItem="C2C-Fu-cgy" secondAttribute="trailing" constant="40" id="phd-lj-ppl"/>
+                            <constraint firstItem="ysI-I3-SuS" firstAttribute="top" secondItem="C2C-Fu-cgy" secondAttribute="bottom" constant="20" id="sIr-bU-sl8"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="C8p-Of-Sv6"/>
+                    <connections>
+                        <outlet property="cabinTypeOL" destination="qaD-UK-fHx" id="YAL-2t-Bbx"/>
+                        <outlet property="imageOL" destination="cnU-iJ-TFR" id="eRb-bO-jbL"/>
+                        <outlet property="noOfTravellersOL" destination="ysI-I3-SuS" id="jTk-N7-xQc"/>
+                        <outlet property="resultOL" destination="bZG-bL-OYZ" id="kot-UF-aPp"/>
+                        <outlet property="totalCostOL" destination="6md-Oc-Yzo" id="cQk-JW-pxA"/>
+                        <outlet property="travellerNameOL" destination="C2C-Fu-cgy" id="4Hu-gK-BNP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="X6f-nH-U4r" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1890.8396946564885" y="3.5211267605633805"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="LuY-9c-h0J">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="BdT-4E-TUX" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="YNa-YI-Fhv">
+                        <rect key="frame" x="0.0" y="118" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="fbZ-rP-Lg5"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3Aj-KX-clP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="101.5267175572519" y="3.5211267605633805"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

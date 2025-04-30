@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "CC0E25D9-617D-44DC-ACA5-749FA376C343"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "681B0A9D-214B-40A5-9E43-C8680ADD90E6"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "StringInitialsApp/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "9"
+            endingLineNumber = "9"
+            landmarkName = "ViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "681B0A9D-214B-40A5-9E43-C8680ADD90E6 - c834d985e42a160e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "StringInitialsApp.ViewController.__allocating_init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; StringInitialsApp.ViewController"
+                  moduleName = "StringInitialsApp.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/venkatakishorekorrapati/Documents/StringInitialsApp/StringInitialsApp/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0">
+               </Location>
+               <Location
+                  uuid = "681B0A9D-214B-40A5-9E43-C8680ADD90E6 - 2efd0b4f27f3423"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "StringInitialsApp.ViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; StringInitialsApp.ViewController"
+                  moduleName = "StringInitialsApp.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/venkatakishorekorrapati/Documents/StringInitialsApp/StringInitialsApp/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12">
+               </Location>
+               <Location
+                  uuid = "681B0A9D-214B-40A5-9E43-C8680ADD90E6 - 2a65f60dfb0ffebe"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "StringInitialsApp.ViewController.__allocating_init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;StringInitialsApp.ViewController&gt;"
+                  moduleName = "StringInitialsApp.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/venkatakishorekorrapati/Documents/StringInitialsApp/StringInitialsApp/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0">
+               </Location>
+               <Location
+                  uuid = "681B0A9D-214B-40A5-9E43-C8680ADD90E6 - e3a61ffa35d7bd0f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "StringInitialsApp.ViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;StringInitialsApp.ViewController&gt;"
+                  moduleName = "StringInitialsApp.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/venkatakishorekorrapati/Documents/StringInitialsApp/StringInitialsApp/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12">
+               </Location>
+               <Location
+                  uuid = "681B0A9D-214B-40A5-9E43-C8680ADD90E6 - 7d42ba2eab519c56"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "StringInitialsApp.ViewController.__deallocating_deinit"
+                  moduleName = "StringInitialsApp.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/venkatakishorekorrapati/Documents/StringInitialsApp/StringInitialsApp/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
